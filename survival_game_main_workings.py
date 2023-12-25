@@ -16,7 +16,7 @@ BLACK = (0, 0, 0)
 
 play_again_button = None
 quit_button = None
-BULLET_IMAGE = pygame.transform.scale(pygame.image.load("survival_game/assets/bullet_pic.png"),(10,15))
+BULLET_IMAGE = pygame.transform.scale(pygame.image.load("assets/bullet_pic.png"),(10,15))
 
 WIDTH, HEIGHT = 700, 700
 win = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -40,13 +40,13 @@ man_image_raw1 = pygame.transform.rotate(
 
 man_image1 = pygame.transform.scale(man_image_raw1, (MAN_WIDTH, MAN_HEIGHT))
 
-small_enemie1_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/small_zombie1.png"), (50, 50))
-small_enemie2_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/small_zombie2.png"), (50, 50))
-small_enemie3_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/small_zombie3.png"), (50, 50))
-small_enemie4_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/small_zombie4.png"), (50, 50))
+small_enemie1_raw = pygame.transform.scale(pygame.image.load("assets/small_zombie1.png"), (50, 50))
+small_enemie2_raw = pygame.transform.scale(pygame.image.load("assets/small_zombie2.png"), (50, 50))
+small_enemie3_raw = pygame.transform.scale(pygame.image.load("assets/small_zombie3.png"), (50, 50))
+small_enemie4_raw = pygame.transform.scale(pygame.image.load("assets/small_zombie4.png"), (50, 50))
 
-medium_enemy1_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/medium_zombie1.png"), (50, 50))
-medium_enemy2_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/medium_zombie2.png"), (50, 50))
+medium_enemy1_raw = pygame.transform.scale(pygame.image.load("assets/medium_zombie1.png"), (50, 50))
+medium_enemy2_raw = pygame.transform.scale(pygame.image.load("assets/medium_zombie2.png"), (50, 50))
 
 # list of enemies
 small_zombies_list = [small_enemie1_raw,small_enemie2_raw,small_enemie3_raw,small_enemie4_raw]
@@ -277,7 +277,6 @@ def survival_game_main():
     pygame.init()
     pygame.display.set_caption("ZOMBIE SURVIVAL GAME")
     global BARRICATE_HEALTH
-    key_pressed = pygame.key.get_pressed()
     FPS = 40
     # set the FPS of the game at which it runs
     clock = pygame.time.Clock()
@@ -286,6 +285,7 @@ def survival_game_main():
     game_over = False  # Add a flag to track if the game is over
     end_screen_displayed = False  # Add a flag to track if the end screen is displayed
 
+    key_pressed = pygame.key.get_pressed()
     while run:
         clock.tick(FPS)
 
@@ -327,7 +327,7 @@ def survival_game_main():
                 # Display the end screen
                 play_again_button, quit_button = end_screen()  # Display the end screen and get the buttons
 
-        if game_over and end_screen_displayed:
+        if game_over :
             # Handle the buttons only when the game is over and the end screen is displayed
             for event in pygame.event.get():
                 if event.type == pygame.MOUSEBUTTONDOWN:
