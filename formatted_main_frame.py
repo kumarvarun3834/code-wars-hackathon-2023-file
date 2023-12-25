@@ -2,14 +2,15 @@ import pygame,math,random
 from pygame.locals import *
 from survival_game_main_workings import *
 import survival_game_main_workings
+from about import *
 
-small_enemie1_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/small_zombie1.png"), (100, 100))
-small_enemie2_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/small_zombie2.png"), (100, 100))
-small_enemie3_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/small_zombie3.png"), (100, 100))
-small_enemie4_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/small_zombie4.png"), (100, 100))
+small_enemie1_raw = pygame.transform.scale(pygame.image.load("assets/small_zombie1.png"), (100, 100))
+small_enemie2_raw = pygame.transform.scale(pygame.image.load("assets/small_zombie2.png"), (100, 100))
+small_enemie3_raw = pygame.transform.scale(pygame.image.load("assets/small_zombie3.png"), (100, 100))
+small_enemie4_raw = pygame.transform.scale(pygame.image.load("assets/small_zombie4.png"), (100, 100))
 
-medium_enemy1_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/medium_zombie1.png"), (100, 100))
-medium_enemy2_raw = pygame.transform.scale(pygame.image.load("survival_game/assets/medium_zombie2.png"), (100, 100))
+medium_enemy1_raw = pygame.transform.scale(pygame.image.load("assets/medium_zombie1.png"), (100, 100))
+medium_enemy2_raw = pygame.transform.scale(pygame.image.load("assets/medium_zombie2.png"), (100, 100))
 
 # list of enemies
 small_zombies_list = [small_enemie1_raw,small_enemie2_raw,small_enemie3_raw,small_enemie4_raw]
@@ -48,7 +49,7 @@ BUTTON_COLOR = RED
 
 LOGO_BACKGROUND_COLOUR = GREEN  # DEFINE AT IN ALL GAME
 
-grass=pygame.transform.scale(pygame.image.load("survival_game/assets/grass.jpg"),(700,760))
+grass=pygame.transform.scale(pygame.image.load("assets/grass.jpg"),(700,760))
 zombies_list=[]
 
 # LOGO COORDINATES PREFER DEF AT ALL IN YOUR CODEassets/grass.jpg
@@ -224,7 +225,7 @@ def start_game():
     # Add code to initialize and start your game
 
 def show_about():
-    # AboutSection(win)
+    AboutSection(win)
 
     # Add code to display information about the game
     pass
