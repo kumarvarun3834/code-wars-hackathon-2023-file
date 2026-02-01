@@ -36,7 +36,7 @@ WINNER_FONT = pygame.font.SysFont("comicsans", 100)
 
 MAN_WIDTH, MAN_HEIGHT = 50, 50
 man_image_raw1 = pygame.transform.rotate(
-    pygame.image.load("survival_game/assets/max (2).png"), 180)
+    pygame.image.load("assets/max (2).png"), 180)
 
 man_image1 = pygame.transform.scale(man_image_raw1, (MAN_WIDTH, MAN_HEIGHT))
 
@@ -82,7 +82,7 @@ def lane_markers():
         pygame.draw.rect(win, WHITE, (450 + 45, y, MARKER_WIDTH, MARKER_HEIGHT))
         pygame.draw.rect(win, WHITE, (500 + 45, y, MARKER_WIDTH, MARKER_HEIGHT))
         # total divisions=10
-    barricade_image = pygame.transform.scale(pygame.image.load("survival_game/assets/barricate.png"), (50, 50))
+    barricade_image = pygame.transform.scale(pygame.image.load("assets/barricate.png"), (50, 50))
     barricade = pygame.Rect(0, 500, barricade_image.get_width(), barricade_image.get_height())
     global lane_positions,BARRICATE_HEALTH
 

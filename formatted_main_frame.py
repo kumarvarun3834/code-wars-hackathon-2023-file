@@ -37,7 +37,7 @@ ABOUT_GAME_FONT = pygame.font.SysFont('Arial', 10)
 
 # MAIN LOGO IMAGE
 # PREFER DEFINING IN ALL GAME BY YOUR OWN
-LOGO_IMAGE = "survival_game/assets/logo1.png"
+LOGO_IMAGE = "assets/logo1.png"
 
 # SCALING PREFER DEFINING BY OWN IN ALL GAMES
 # SET BY DEFAULT OF SCREEN SIZE
@@ -235,8 +235,8 @@ def open_settings():
     pass
 
 
-play_image = pygame.image.load("survival_game/assets/play.png")
-pause_image = pygame.image.load("survival_game/assets/pause.png")
+play_image = pygame.image.load("assets/play.png")
+pause_image = pygame.image.load("assets/pause.png")
 current_image = play_image
 
 
