@@ -16,16 +16,19 @@ Supporting assets and resources
 Project configuration files
 
 ## 📁 Repository Structure
+
+```text
 code-wars-hackathon-2023-file/
-├── assets/                          # Assets, images, or data (if any)
-├── about.py                        # About / Metadata script
-├── formatted_main_frame.py         # Core logic/main program
-├── survival_game_main_workings.py  # Main game implementation
-├── pyproject.toml                  # Configuration & dependencies
+├── assets/                         # Assets, images, or data (if any)
+├── about.py                        # About / metadata script
+├── formatted_main_frame.py         # Core logic / main program
+├── survival_game_main_workings.py  # Survival game implementation
+├── pyproject.toml                  # Project configuration & dependencies
 ├── .python-version                 # Python version settings
-├── .gitignore                      # Ignored files
-├── stuff_tbd.md                    # Notes & TODOs
-└── README.md                      # Project overview (this file)
+├── .gitignore                      # Git ignored files
+├── stuff_tbd.md                    # Notes, ideas, and TODOs
+└── README.md                       # Project documentation
+```
 
 ## 🚀 Getting Started
 
