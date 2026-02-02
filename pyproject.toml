@@ -1,7 +1,7 @@
 [project]
 name = "code-wars-hackathon-2023-file"
 version = "0.1.0"
-description = "Add your description here"
+description = "this is an engaging game made with pygame named Zombie Outbreak for Code War hackathon'2023"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
